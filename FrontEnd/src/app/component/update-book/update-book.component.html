@@ -1,0 +1,36 @@
+<div class="row">
+    <div class="col-2">
+
+    </div>
+    <div class="col-8 b-3">
+        <h3>Book</h3>
+        <form [formgroup="updateBook"]>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Book Name</label>
+                <input type="email" class="form-control" formControlName="bname"  placeholder="Book name">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Book Author</label>
+                <input type="email" class="form-control" formControlName="Author"  placeholder="Author">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Book ISBN</label>
+                <input type="email" class="form-control" formControlName="bisbn"  placeholder="Enter ISBN">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Book Available</label>
+                <input type="checkbox" id="available" name="available" value="available">
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Book PublicationYear</label>
+                <input type="email" class="form-control" formControlName="Year"  placeholder="Year">
+              </div>
+              <div class="mb-3">
+                <button type="submit" class="btn btn-success" (click)="updateBook()">Update</button>
+              </div>
+        </form>
+    </div>
+    <div class="col-2">
+        
+    </div>
+</div>

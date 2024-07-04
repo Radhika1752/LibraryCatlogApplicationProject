@@ -1,0 +1,38 @@
+<div class="row">
+
+    <div class="col-2">
+
+    </div>
+    <div class="col-8">
+        <h3>All Book</h3>
+        <table class="table table-stripe hover">
+            <thead>
+                <tr>
+                    <th>Book Name</th>
+                    <th>Book Author</th>
+                    <th>Book ISBN</th>
+                    <th>Book Available</th>
+                    <th>Book Publication Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let b of book">
+                    <td>{{b.name}}</td>
+                    <td>{{b.author}}</td>
+                    <td>{{b.isbn}}</td>
+                    <td>{{b.available}}</td>
+                    <td>{{b.publicationyear}}</td>
+                    
+                    <td>
+                        <a class="btn btn-success" routerLink="/edit/{{b.cid}}" >Edit</a> || 
+                        <button class="btn btn-danger" (click)="delBook(b.cid)">Delete</button>
+                    </td>
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="col-2">
+
+    </div>
+</div>
